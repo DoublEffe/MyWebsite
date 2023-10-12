@@ -5,6 +5,8 @@
   "pic desc"
   "mid ."
   "projects projects"
+  "mid-2 ."
+  "workflow-pic video"
    ;
 }
 
@@ -89,3 +91,14 @@
   border-radius: 4px;
 }
 
+.mid-2{
+  grid-area: mid-2;
+}
+
+.workflow-pic{
+  grid-area: workflow-pic;
+}
+
+.video{
+  grid-area: video;
+}
