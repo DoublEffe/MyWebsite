@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.upper {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 8vh;
+  left: 10vw;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social a {
+  width: 5vw;
+  height: 5vh;
+  position: relative;
+}
+
+.social a svg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.self {
+  width: 40vw;
+  background-color: rgba(90, 74, 199, .8);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.self::before {
+  content: '';
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  background-color: rgba(90, 74, 199, .8);
+  transform: skewX(-25deg);
+  transform-origin: 100vh -0.8vw;
+}
+
+.rounded-circle {
+  width: 22vw;
+  height: 30vh;
+  z-index: 1;
+  position: absolute;
+  top: 8vh;
+  left: 10vw;
+}
+
+.desc {
+  z-index: 1;
+  position: relative;
+  top: 45vh;
+  left: 9vw;
+  max-inline-size: 60%;
+}
+
+.desc span {
+  display: block;
+  text-align: center;
+}
+
+.separator {
+  width: 100%;
+  height: 1vh;
+  position: relative;
+  bottom: 1vh;
+  background: linear-gradient(160deg, white 15%, rgba(90, 74, 199, .8) 35%);
+}
+
+.mid-1 {
+  position: relative;
+  bottom: 5vh;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.projects h6 {
+  align-self: center;
+}
+
+.projects-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects-items div {
+  background-color: #d9d9d9;
+  width: 12vw;
+  height: 18vh;
+  border-radius: 5px;
+  position: relative;
+}
+
+.projects-items div p {
+  text-align: center;
+  margin-top: 1vh;
+  
+}
+
+.projects-items div span {
+  display: block;
+  text-align: center;
+}
+
+.lower {
+  display: flex;
+  justify-content: center;
+}
+
+.workflow-pic {
+  position: relative;
+  top: 15vh;
+  left: 10vw;
+  width: 50vw;
+}
+
+.lower iframe {
+  position: relative;
+  top: 15vh;
+  height: 40vh;
+  width: 35vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.self::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  background-color: rgba(90, 74, 199, .8);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 40vw;
+  -webkit-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}*/
+

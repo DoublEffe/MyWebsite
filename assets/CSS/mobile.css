@@ -1,0 +1,167 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  display: grid;
+  grid-template-areas:
+  "upper upper"
+  "sep sep"
+  "mid-1 ."
+  "projects projects"
+  "mid-2 ."
+  "lower lower"
+   ;
+}
+
+.upper {
+  grid-area: upper;
+  background-color: rgba(90, 74, 199, .8);
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.title {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;
+}
+
+.title h1 {
+  margin-bottom: 0%;
+}
+
+.title h4 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.social {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a {
+  position: relative;
+  height: 3.5vh;
+  width: 5vw;
+}
+
+.social a svg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.self {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 8vh;
+}
+
+.rounded-circle {
+  padding-left: 5%;
+  width: 40vw;
+  height: 18vh;
+}
+
+.desc {
+  grid-area: desc;
+  padding-left: 5%;
+  max-inline-size: 60%;
+}
+
+.desc span {
+  display: block;
+}
+
+.separator {
+  grid-area: sep;
+  width: 100%;
+  height: 5vh;
+  background: linear-gradient(to bottom, rgba(90, 74, 199, .8) 30%,rgba(113, 99, 205, 0.8) 30%,white);
+  
+}
+
+.mid-1{
+  grid-area: mid-1;
+  position: relative;
+  bottom: 4vh;
+}
+
+.projects-container {
+  grid-area: projects ;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects-items div {
+  position: relative;
+  width: 25vw;
+  height: 18vh;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+}
+
+.projects-items div span {
+  display: block;
+  text-align: center;
+}
+
+.projects-items div p {
+  font-size: 0.8rem;
+  margin-top: 1vh;
+  
+}
+
+.mid-2 {
+  grid-area: mid-2;
+}
+
+.lower {
+  grid-area: lower;
+  display: flex;
+  flex-direction: column;
+}
+
+.workflow-pic {
+  align-self: center;
+  margin-bottom: 5vh;
+}
+
+.lower iframe {
+  align-self: center;
+  height: 20vh;
+  width: 70vw;
+}

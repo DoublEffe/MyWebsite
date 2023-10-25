@@ -1,0 +1,18 @@
+@import url("/assets/CSS/mobile.css");
+
+.self {
+  bottom: 3vh;
+}
+
+.rounded-circle {
+  height: 25vh;
+}
+
+.lower {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.lower iframe {
+  width: 50vw;
+}
