@@ -1,10 +1,11 @@
-
+@import url("/assets/CSS/common.css");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 #body {
   display: grid;
@@ -34,7 +35,7 @@
   align-items: start;
   flex-direction: column;
   position: relative;
-  top: 10vh;
+  top: 7vh;
   left: 10vw;
   width: 80vw;
 }
@@ -140,7 +141,7 @@
 }
 
 .projects-items div p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 1vh;
   
 }

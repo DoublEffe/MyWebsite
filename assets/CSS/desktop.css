@@ -1,8 +1,12 @@
+@import url("/assets/CSS/common.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .upper {
   width: 100%;
   height: 70vh;
@@ -82,7 +86,7 @@
   height: 1vh;
   position: relative;
   bottom: 1vh;
-  background: linear-gradient(160deg, white 15%, rgba(90, 74, 199, .8) 35%);
+  background: linear-gradient(160deg, #e5e4e4 15%, rgba(90, 74, 199, .8) 35%);
 }
 
 .mid-1 {
@@ -112,7 +116,7 @@
 }
 
 .projects-items div {
-  background-color: #d9d9d9;
+  background-color: #cdcdcd;
   width: 12vw;
   height: 18vh;
   border-radius: 5px;
@@ -122,7 +126,7 @@
 .projects-items div p {
   text-align: center;
   margin-top: 1vh;
-  
+  font-size: 0.9rem;
 }
 
 .projects-items div span {
@@ -132,21 +136,21 @@
 
 .lower {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .workflow-pic {
   position: relative;
   top: 15vh;
   left: 10vw;
-  width: 50vw;
+  width: 40vw;
 }
 
 .lower iframe {
   position: relative;
   top: 15vh;
   height: 40vh;
-  width: 35vw;
+  width: 40vw;
 }
 
 

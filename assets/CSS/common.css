@@ -1,0 +1,67 @@
+@font-face {
+  font-family: projects-desc;
+  src: url("/assets/fonts/PlaypenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: projects-title;
+  src: url("/assets/fonts/PlaypenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: self-desc;
+  src: url("/assets/fonts/PlaypenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: self-title;
+  src: url("/assets/fonts/PlaypenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: me;
+  src: url("/assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: job;
+  src: url("/assets/fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: mid;
+  src: url("/assets/fonts/Rubik-Italic.ttf");
+}
+
+.title h1 {
+  font-family: me;
+}
+
+.title h4 {
+  font-family: job;
+}
+
+.desc span {
+  font-family: self-title;
+}
+
+.desc {
+  font-family: self-desc;
+}
+
+.projects span {
+  font-family: projects-title;
+}
+
+.projects p {
+  font-family: projects-desc;
+}
+
+.mid-1, .mid-2 {
+  font-family: mid;
+} 
+
+#body {
+  background-color: #e5e4e4;
+
+}
