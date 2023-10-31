@@ -4,8 +4,13 @@
   bottom: 3vh;
 }
 
+.desc-popover {
+  display: none;
+}
+
 .desc {
   display: block;
+  max-inline-size: 60%;
 }
 
 .btn {

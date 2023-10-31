@@ -83,6 +83,10 @@
 }
 
 .desc {
+  display: none;
+}
+
+.desc-popover {
   /*display: none;*/
   grid-area: desc;
   padding-left: 5%;

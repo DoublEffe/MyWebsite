@@ -69,6 +69,10 @@
   left: 10vw;
 }
 
+.desc-popover {
+  display: none;
+}
+
 .desc {
   z-index: 1;
   position: relative;
