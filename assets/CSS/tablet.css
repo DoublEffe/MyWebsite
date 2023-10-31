@@ -4,6 +4,14 @@
   bottom: 3vh;
 }
 
+.desc {
+  display: block;
+}
+
+.btn {
+  display: none !important;
+}
+
 .rounded-circle {
   height: 25vh;
 }

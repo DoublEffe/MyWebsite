@@ -83,9 +83,23 @@
 }
 
 .desc {
+  /*display: none;*/
   grid-area: desc;
   padding-left: 5%;
   max-inline-size: 60%;
+  
+}
+
+.trunc {
+  
+  width: 28vw;
+  white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.hide {
+  display: none !important;
 }
 
 .desc span {

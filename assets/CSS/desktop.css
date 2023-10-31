@@ -57,6 +57,7 @@
   background-color: rgba(90, 74, 199, .8);
   transform: skewX(-25deg);
   transform-origin: 100vh -0.8vw;
+  background: linear-gradient(92deg, rgba(56, 41, 154, 0.8) 80%, transparent );
 }
 
 .rounded-circle {
@@ -74,6 +75,10 @@
   top: 45vh;
   left: 9vw;
   max-inline-size: 60%;
+}
+
+.btn {
+  display: none !important;
 }
 
 .desc span {
