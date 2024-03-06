@@ -1,20 +1,25 @@
 @import url("/assets/CSS/mobile.css");
 
-.self {
-  bottom: 3vh;
+
+.desc-mobile {
+  display: none;
 }
 
-.desc-popover {
+.about {
+  display: none;
+}
+
+#about-me {
   display: none;
 }
 
 .desc {
   display: block;
-  max-inline-size: 60%;
+  max-inline-size: 50%;
 }
 
-.btn {
-  display: none !important;
+.desc span {
+  display: block;
 }
 
 .rounded-circle {

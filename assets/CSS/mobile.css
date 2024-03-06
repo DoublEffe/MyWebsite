@@ -1,12 +1,5 @@
 @import url("/assets/CSS/common.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 #body {
   display: grid;
   grid-template-areas:
@@ -15,6 +8,8 @@
   "mid-1 ."
   "projects projects"
   "mid-2 ."
+  "about about"
+  "mid-3 ."
   "lower lower"
    ;
 }
@@ -23,25 +18,19 @@
   grid-area: upper;
   background-color: rgba(90, 74, 199, .8);
   height: 50vh;
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 
 .title {
-  display: flex;
   align-items: start;
-  flex-direction: column;
-  position: relative;
   top: 7vh;
-  left: 10vw;
   width: 80vw;
 }
 
 .title h1 {
   margin-bottom: 0%;
+  font-size: 3rem;
 }
 
 .title h4 {
@@ -51,74 +40,61 @@
 
 .social {
   margin-top: 0%;
-  display: flex;
   justify-content: space-between;
 }
 
 .social a {
-  position: relative;
-  height: 3.5vh;
-  width: 5vw;
-}
-
-.social a svg {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
+  height: 4vh;
+  width: 10vw;
 }
 
 .self {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  bottom: 8vh;
+  justify-content: space-around;
+  bottom: 2vh;
 }
 
 .rounded-circle {
+  padding: 0 !important;
   padding-left: 5%;
-  width: 40vw;
-  height: 18vh;
+  width: 38vw;
+  height: 20vh;
 }
 
 .desc {
   display: none;
 }
 
-.desc-popover {
-  /*display: none;*/
-  grid-area: desc;
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  margin: auto;
+  position: relative;
+  right: 5vh;
+  background-color: rgb(247, 181, 58);
+}
+
+.desc-mobile {
+  grid-area: about;
   padding-left: 5%;
-  max-inline-size: 60%;
-  
-}
-
-.trunc {
-  
-  width: 28vw;
-  white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-}
-
-.hide {
-  display: none !important;
-}
-
-.desc span {
-  display: block;
+  max-inline-size: 80%;
+  font-family: self-desc;
+  text-align: start;
 }
 
 .separator {
   grid-area: sep;
   width: 100%;
   height: 5vh;
-  background: linear-gradient(to bottom, rgba(90, 74, 199, .8) 30%,rgba(113, 99, 205, 0.8) 30%,white);
-  
+  background: linear-gradient(to bottom, rgba(90, 74, 199, .8) 30%,rgba(113, 99, 205, 0.8) 30%,#e5e4e4);
 }
 
 .mid-1{
+  font-size: 2.5rem;
   grid-area: mid-1;
   position: relative;
   bottom: 4vh;
@@ -134,8 +110,7 @@ text-overflow: ellipsis;
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
+ 
   align-items: center;
 }
 
@@ -146,26 +121,15 @@ text-overflow: ellipsis;
 }
 
 .projects-items div {
-  position: relative;
   width: 25vw;
-  height: 18vh;
-  background-color: #d9d9d9;
-  border-radius: 4px;
-}
-
-.projects-items div span {
-  display: block;
-  text-align: center;
 }
 
 .projects-items div p {
-  font-size: 0.7rem;
-  margin-top: 1vh;
-  
+  font-size: 0.78rem;
 }
 
 .mid-2 {
-  grid-area: mid-2;
+  grid-area: mid-3;
 }
 
 .lower {
@@ -183,4 +147,9 @@ text-overflow: ellipsis;
   align-self: center;
   height: 20vh;
   width: 70vw;
+}
+
+#about-me {
+  grid-area: mid-2;
+  font-family: mid;
 }
