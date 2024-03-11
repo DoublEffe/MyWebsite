@@ -16,19 +16,28 @@
   left: -29.89vw;
 }
 
+.social a {
+  width: 9vw;
+}
+
+.rounded-circle {
+  height: 40vh;
+  width: 50vw;
+  right: 5vw;
+  
+}
+
 .wrapper {
   flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
 }
 
 input:checked + label {
-  width: 150px;
+  width: 50vw;
 }
 
-input:checked + label .icon {
-  width: 30px;
-  height: 45px;
-}
 
-.description {
-  height: 90px;
-}
+
+
+
