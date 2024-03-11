@@ -11,15 +11,28 @@
   display: flex;
   justify-content: space-between;
   background-color: #223;
-
-
 }
 
 .nav {
   display: flex;
+  height: 10vh;
+  width: 70vw;
+  position: relative;
+  box-shadow: 0px 0px 15px black;
 }
 
-.btn {
+.nav::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-top: 10vh solid #223;
+  border-right: 3vw solid transparent;
+  left: 70vw;
+  
+
+}
+
+.nav-item {
   margin: 5px;
   width: 8vw;
   height: 5vh;
@@ -37,21 +50,20 @@
   background-color: #223;
 }
 
-.btn::before, .btn::after {
+.nav-item::before, .nav-item::after {
   position: absolute;
   background: #223;
   z-index: -1;
   transition: 1s;
-  content: '';
-  
+  content: ''; 
 }
 
-.btn::before {
+.nav-item::before {
   height: 5vh;
   width: 7vw;
 }
 
-.btn::after {
+.nav-item::after {
   width: 7vw;
   height: 4vh;
 }
@@ -69,29 +81,24 @@
 
 
 
-.btn:hover::before {
+.nav-item:hover::before {
   width: 0px;
   background: #fff;
-
-
 }
 
-.btn:hover::after {
+.nav-item:hover::after {
   height: 0px;
   background: #fff;
-  
-
 }
 
 
 
-.btn:hover {
+.nav-item:hover {
   background: #fff;
   border: 5px solid #c0781f;
   .noselect{
     color: #223;
   }
-
 }
 
 
@@ -103,7 +110,6 @@
   top: 20vh;
   left: 10vw;
   z-index: 1;
-
 }
 
 .title h1 {
@@ -118,13 +124,14 @@
 .social a {
   position: relative;
   margin: 0 1vw 0 1vw;
-  background-color:#c0781f;
-  border-radius: 5px;
-  width: 3vw;
-  height: 3vh;
+  background-color:none;
+  border: 2px solid #e4cb58;
+  transition: 0.25s;
+  width: 4vw;
+  height: 4vh;
 }
 
-.social a svg {
+.social a svg { 
   position: absolute;
   top: 0%;
   left: 0%;
@@ -132,10 +139,22 @@
   width: 100%;
 }
 
+.social a svg path {
+  fill: #e4cb58 ;
+}
+/*
+.social a:hover  {
+
+  box-shadow: inset 0 -3.25em 0 0 #e4cb58;
+  filter: hue-rotate(45deg);
+  width: 5vw;
+  height: 5vh;
+  fill: #fff;
+}*/
+
 .up:hover,
 .up:focus {
   --hoveer: #{adjust-hue(#333, 45deg)};
-
   box-shadow: inset 0 -3.25em 0 0 var(--hoveer);
 }
 
@@ -153,31 +172,24 @@
 }
 
 .up:hover { 
-    border: 0px;
-    box-shadow: inset 0 -3.25em 0 0 #e4cb58;
-    filter: hue-rotate(45deg);
-    color: #fff;
-    z-index: 10;
+  border: 0px;
+  box-shadow: inset 0 -3.25em 0 0 #e4cb58;
+  filter: hue-rotate(45deg);
+  color: #fff;
+  z-index: 10;
 }
 
 
-.social a:hover {
-  background-color: red;
-  width: 5vw;
-  height: 5vh;
-}
 
 .self {
   display: flex;
   width: 25vw;
   height: 100%;
   background-color: rgba(90, 74, 199, .8);
-  /*flex-direction: column;*/
   position: relative;
 }
 
 .self::before {
-
   content: "";
   width:0;
   border-bottom: 100vh solid rgba(90, 74, 199, .8);
@@ -199,15 +211,26 @@
 }
 
 
-
+.separator {
+  height: 2vh;
+  background-color: rgba(36, 22, 134, .8);
+}
 
 
 .projects-container {
-  
+  width: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  background-color: #ebe9e9;
+  background-color: #223;
+  align-items: center;
+}
 
+.projects-container h1 {
+  position: relative;
+  right: 30vw;
+  
 }
 
 
@@ -217,6 +240,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .container {
@@ -250,6 +274,15 @@ input:checked + label .description {
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.icon-plus {
+  position: absolute;
+}
 
 .row {
   color: white;
@@ -258,7 +291,7 @@ input:checked + label .description {
 }
 
 .icon {
-  background: #223;
+  background-color: rgba(119, 109, 185, .8);
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -268,12 +301,17 @@ input:checked + label .description {
   margin: 15px;
 }
 
+.icon svg {
+  width: 70%;
+  height: 70%;
+}
+
 .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  width: 100px;
+  width: 70%;
   height: 80px;
   opacity: 0;
   transform: translateY(20px);
@@ -290,77 +328,82 @@ input:checked + label .description {
   padding-top: 5px;
 }
 
+.card[for="c1"], .card[for="c2"] {
+  background-image: url("/assets/images/pngtree-d-illustration-showing-a-mobile-phone-that-s-filled-with-different-picture-image_2677997.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 25vh;
+}
+
+.card[for="c4"], .card[for="c5"] {
+  background-image: url("/assets/images/how-to-build-a-web-app.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 25vh;
+}
+
 .lower {
-  z-index: 10;
+  background-color: #223;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
   position: relative;
-}
-
-.steps-wrapper {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 40vw;
+  flex-direction: column;
 }
 
-.steps {
-  transform: scale(3.8);
+.desc {
+  display: flex;
+  justify-content: space-around;
 }
 
-.steps-card-1 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  width: 70%;
+.self-desc {
+  max-width: 40vw;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+.skill-icon svg{
+  display: flex;
+  width: 10vw;
+  height: 10vh;
+  --m:
+    radial-gradient(circle farthest-side at right,#000 99%,#0000) 
+      0 100%/46% 92% no-repeat,
+    radial-gradient(circle farthest-side at left ,#000 99%,#0000) 
+      100% 0/46% 92% no-repeat;
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale(.5);
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+
+
+.skill-exp{
+  display: none;
+  width: 10vw;
   height: 25vh;
-  border: 2px solid #223;
+  border: 2px solid white;
   border-radius: .5rem;
-  box-shadow: 5px 5px #223;
-  position: relative;
-  top: 3vh;
-  display: flex;
+  box-shadow: 5px 5px white;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 5vh;
 }
 
-.steps-card-2 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  width: 70%;
-  height: 25vh;
-  border: 2px solid #223;
-  border-radius: .5rem;
-  box-shadow: 5px 5px #223;
-  position: relative;
-  left: 10vw;
-  top: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.skill-icon svg:hover {
+  -webkit-mask-position: 7.5% 50%,92.5% 50%;
+  mask-position: 7.5% 50%,92.5% 50%;
+  filter: grayscale(0);
 }
 
-.steps-card-3 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  width: 70%;
-  height: 25vh;
-  border: 2px solid #223;
-  border-radius: .5rem;
-  box-shadow: 5px 5px #223;
-  position: relative;
-  top: 3vh;
+.skill-icon svg:hover + div{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
+

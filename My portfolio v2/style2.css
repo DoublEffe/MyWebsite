@@ -1,3 +1,34 @@
+.nav-item {
+  width: 25vw;
+}
+
+.nav-item::before {
+  height: 6vh;
+  width: 12vw;
+}
+
+.nav-item::after {
+  width: 7vw;
+  height: 4vh;
+}
+
+.self::before {
+  left: -29.89vw;
+}
+
+.wrapper {
+  flex-direction: column;
+}
+
 input:checked + label {
-  width: 200px;
+  width: 150px;
+}
+
+input:checked + label .icon {
+  width: 30px;
+  height: 45px;
+}
+
+.description {
+  height: 90px;
 }
