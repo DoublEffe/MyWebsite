@@ -2,14 +2,9 @@
   width: 25vw;
 }
 
-.nav-item::before {
-  height: 6vh;
-  width: 12vw;
-}
-
-.nav-item::after {
-  width: 7vw;
-  height: 4vh;
+.nav-item a {
+  color: white;
+  text-decoration: none;
 }
 
 .self::before {
