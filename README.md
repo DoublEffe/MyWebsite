@@ -13,6 +13,6 @@
     ·
     <a href="https://github.com/DoublEffe/MyWebsite/issues">Report Bug</a>
     ·
-    <a href="#">Request Feature</a>
+    <a href="https://github.com/DoublEffe/MyWebsite/issues">Request Feature</a>
   </p>
 </div>
