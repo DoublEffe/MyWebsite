@@ -11,7 +11,7 @@
     <br />
     <a href="https://doubleffe.github.io/MyWebsite/">Go to the website</a>
     ·
-    <a href="#">Report Bug</a>
+    <a href="https://github.com/DoublEffe/MyWebsite/issues">Report Bug</a>
     ·
     <a href="#">Request Feature</a>
   </p>
