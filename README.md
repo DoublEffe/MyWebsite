@@ -9,10 +9,10 @@
     A bit of me
     <br />
     <br />
-    <a href="(https://doubleffe.github.io/MyWebsite/)">Go to the website</a>
+    <a href="https://doubleffe.github.io/MyWebsite/">Go to the website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="#">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="#">Request Feature</a>
   </p>
 </div>
