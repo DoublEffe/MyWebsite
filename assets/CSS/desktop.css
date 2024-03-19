@@ -360,6 +360,7 @@ input:checked + label .description {
 
 .lower h1 {
   text-align: center;
+  height: 100vh;
 }
 
 .desc {
