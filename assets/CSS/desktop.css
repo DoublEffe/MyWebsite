@@ -42,15 +42,6 @@ h3 {
   top: 0px;
 }
 
-.nav::after {
-  content: "";
-  position: absolute;
-  height: 0;
-  border-top: 10vh solid #223;
-  border-right: 3vw solid transparent;
-  left: 40vw;
-}
-
 .nav-item {
   margin: 5px;
   width: 10vw;
@@ -180,7 +171,7 @@ h3 {
   margin: 0.5em;
   padding: 1em 2em;
 }
-
+/*
 @media only screen and (min-width: 426px) {
   .up:hover { 
     border: 0px;
@@ -190,7 +181,7 @@ h3 {
     z-index: 10;
   }
 }
-
+*/
 .self {
   display: flex;
   width: 25vw;
@@ -356,6 +347,7 @@ input:checked + label .description {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow-x: scroll;
 }
 
 .lower h1 {
