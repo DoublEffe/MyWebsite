@@ -1,4 +1,4 @@
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 1024px) {
   .social a:hover {
     box-shadow: inset 0 -3.25em 0 0 #e4cb58;
     filter: hue-rotate(45deg);

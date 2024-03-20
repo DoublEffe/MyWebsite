@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-.nav::after {
-  left: 50vw;
-}
-
 .nav-item {
   width: 25vw;
 }
@@ -14,6 +10,7 @@
   color: white;
   text-decoration: none;
 }
+
 
 .title h1 {
   font-size: 2em;
@@ -44,9 +41,32 @@
   align-items: flex-start;
 }
 
-input:checked + label {
-  width: 50vw;
+.description {
+  display: none;
 }
+
+input:checked + label {
+  width: 100%;
+}
+
+input:checked + label .description {
+  display: flex;
+}
+
+.skill-icon svg:focus + div {
+  display: flex;
+}
+
+.skill-icon svg {
+  width: 20vw;
+  height: 20vh;
+}
+
+.skill-exp {
+  width: 28vw;
+  height: 31vh;
+}
+
 
 
 
