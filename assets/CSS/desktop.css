@@ -1,8 +1,12 @@
-
+  :root {
+    --background-color: #223;
+    --secondary-color: #e4cb58;
+    --words-color: white;
+  }
   
   .nav-item::before, .nav-item::after {
     position: absolute;
-    background: #223;
+    background: var(--background-color);
     z-index: -1;
     transition: 1s;
     content: ''; 
@@ -26,25 +30,25 @@
           -ms-user-select: none;
               user-select: none;
     text-decoration: none;
-    color: white;
+    color: var(--words-color);
   }
   
   .nav-item:hover::before {
     width: 0px;
-    background: #fff;
+    background: var(--words-color);
   }
   
   .nav-item:hover::after {
     height: 0px;
-    background: #fff;
+    background: var(--words-color);
   }
   
   .nav-item:hover {
-    background: #fff;
-    border: 3px solid #e4cb58;
+    background: var(--words-color);
+    border: 3px solid var(--secondary-color);
     filter: hue-rotate(45deg);
     .noselect{
-      color: #223;
+      color: var(--background-color);
     }
   }
 
@@ -78,3 +82,6 @@
 .skill-icon svg:hover + div{
   display: flex;
 }
+
+
+

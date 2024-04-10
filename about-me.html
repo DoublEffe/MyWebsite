@@ -9,23 +9,25 @@
   <link rel="stylesheet"  href="assets/CSS/mobile.css" media="screen and (max-width:1023px)">
   <link rel="stylesheet" href="assets/CSS/fonts.css">
   <link rel="icon" href="assets/images/icon.ico">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript" src="assets/JS/email-sender.js"></script>
   <title>Document</title>
 </head>
 <body>
   <nav class="nav">
     <div class="nav-item">
-      <a href="#projects" class="noselect">
-        My project
-      </a>
-    </div>
-    <div class="nav-item">
-      <a href="about-me.html" class="noselect">
+      <a href="#about-me" class="noselect" alt="go to about me section">
         About Me
       </a>
     </div>
+    <div class="nav-item">
+      <a href="#contact-me" class="noselect" alt="go to contact me section">
+        Contact Me
+      </a>
+    </div>
     <div class="logo">
-      <a href="index.html">
-        <img src="assets/images/icon.svg">
+      <a href="index.html" alt="go to the begginning of the page">
+        <img src="assets/images/icon.svg" alt="An image of the site brand">
       </a>
     </div>
   </nav>
@@ -42,13 +44,12 @@
       </p>
       <br>
       <p class="self-desc">Driven by curiosity and a relentless pursuit of excellence, I constantly seek to expand my knowledge and skill set.
-        Even if I have not a formal education trough self education I learned many things. Hover on the icons below to see more.
+        Even if I have not a formal education trough self education I learned many things. Hover or click on the icons below to see more.
       </p>
     </div>
-    
       <div class="skill-icons">
         <div class="skill-icon">
-          <svg  xmlns="http://www.w3.org/2000/svg" width="0.67em" height="1em" viewBox="0 0 256 384">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="0.67em" height="1em" viewBox="0 0 256 384" alt="click or hoover to display figma skills">
             <path fill="#0acf83" d="M64 384c35.328 0 64-28.672 64-64v-64H64c-35.328 0-64 28.672-64 64s28.672 64 64 64"/>
             <path fill="#a259ff" d="M0 192c0-35.328 28.672-64 64-64h64v128H64c-35.328 0-64-28.672-64-64"/>
             <path fill="#f24e1e" d="M0 64C0 28.672 28.672 0 64 0h64v128H64C28.672 128 0 99.328 0 64"/>
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="skill-icon">
-          <svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" style="color: #ffd233;">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" style="color: #ffd233;" alt="click or hoover to display javascript skills">
             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
               <path d="m20 4l-2 14.5l-6 2l-6-2L4 4z" />
               <path d="M7.5 8h3v8l-2-1m8-7H14a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1.423a.5.5 0 0 1 .495.57L15.5 15.5l-2 .5" />
@@ -71,7 +72,7 @@
           </div>
         </div>
         <div class="skill-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1.01em" height="1em" viewBox="0 0 256 255">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.01em" height="1em" viewBox="0 0 256 255" alt="click or hoover to display python skills">
             <defs>
               <linearGradient id="logosPython0" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%">
                 <stop offset="0%" stop-color="#387eb8"/><stop offset="100%" stop-color="#366994"/>
@@ -88,7 +89,7 @@
           </div>
         </div>
         <div class="skill-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128" alt="click or hoover to display flutter skills">
             <path fill="#3fb6d3" d="M12.3 64.2L76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"/>
             <path fill="#27aacd" d="m81.6 93.9l-20-20l-19.4 19.6l19.4 19.6z"/>
             <path fill="#19599a" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"/>
@@ -103,6 +104,23 @@
           </div>
         </div>
       </div>
+  </section>
+  <section class="contact" id="contact-me">
+    <h1>Contact Me.</h1>
+    <form id="email-sender">
+      <div>
+        <span >@</span>
+        <input type="text" placeholder="Email" id="email" name="from_email" alt="input for leaving your email to be contacted bye me">
+      </div>
+      <div>
+        <span >Name</span>
+        <input type="text" placeholder="Name" id="name" name="from_name" alt="input for leaving your name to be contacted bye me">
+      </div>
+      <div class="textarea">
+        <textarea placeholder="Share your thoughts" id="body" name="message" alt="input for leaving your thoughts to be contacted bye me"></textarea>
+      </div>
+      <button type="submit" alt="send button to send the previous information">Send</button>
+    </form>
   </section>
 </body>
 </html>

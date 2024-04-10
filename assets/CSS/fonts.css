@@ -27,13 +27,15 @@
   font-family: job;
 }
 
-.projects-container h1, .lower h1 {
+.projects-container h1, .lower h1, .contact h1 {
   font-family: mid;
 }
 
 .desc {
   font-family: self-desc;
 }
+
+
 
 
 

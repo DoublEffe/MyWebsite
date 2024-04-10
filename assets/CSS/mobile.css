@@ -67,6 +67,17 @@ input:checked + label .description {
   height: 31vh;
 }
 
+.contact h1 {
+  text-align: center;
+}
+
+.contact div {
+  width: 80vw;
+}
+
+.contact button {
+  width: 15vw;
+}
 
 
 
