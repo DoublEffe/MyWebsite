@@ -12,16 +12,24 @@ document.addEventListener('DOMContentLoaded',() =>{
     name.value = ''
     body.value = ''
   }
-  const template_params = {'from_name': name.ariaValueMax, 'message': body.value}
   form.addEventListener('submit', (event) => {
     event.preventDefault()
-    emailjs.sendForm('service_gxjtpqf', 'template_faf6qip', form)
-                    .then(() => {
-                      clear()
-                        console.log('SUCCESS!');
-                    }, (error) => {
+    console.log(email.value.match(/^(\w)+@(\D)+\.\D{2,3}$/g))
+    if (email.value.match(/^(\w)+@(\D)+\.\D{2,3}$/g) && name.value.match(/\D/g) ) {
+      console.log('pp')
+      emailjs.sendForm('service_gxjtpqf', 'template_faf6qip', form)
+                      .then(() => {
                         clear()
-                        console.log('FAILED...', error);
-                    });
+                        window.alert('Message sended')
+                      }, (error) => {
+                          clear()
+                          console.log(error)
+                          window.alert('Error occurred')
+                      });
+    }
+    else{
+      window.alert('incorrect email')
+      clear()
+    }
   })
 })
